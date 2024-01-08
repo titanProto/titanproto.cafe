@@ -1,0 +1,50 @@
+#introduction {
+    margin-top: 100px;
+    min-width: 800px;
+    width: 80%;
+    float: left;
+}
+#introTitle {
+    position: relative;
+    margin-bottom: -8px;
+    opacity: 75%;
+}
+#introTitle span {
+    transition-duration: 250ms;
+}
+#introTitle span:hover {
+    opacity: 25%;
+    transition-duration: 1000ms;
+}
+#irlName {
+    position: absolute;
+    color: #6b05ad;
+    margin: 0;
+}
+#pronouns {
+    margin: 0;
+    font-size: 14px;
+}
+#profilePicture {
+    float: left;
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    
+}
+#aboutMeTitle {
+    margin-bottom: -10px;
+}
+
+.shiftRight {
+    margin-left: 200px;
+}
+
+h1 {
+    font-family: 'Flexi IBM VGA False', monospace;
+}
+body {
+    background-color: #1d0030;
+    color: white;
+}
