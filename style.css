@@ -7,7 +7,7 @@
 #introTitle {
     position: relative;
     margin-bottom: -8px;
-    opacity: 75%;
+    opacity: 90%;
 }
 #introTitle span {
     transition-duration: 250ms;
@@ -36,10 +36,45 @@
 #aboutMeTitle {
     margin-bottom: -10px;
 }
+#contacts {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+#email:hover:after{
+    content: " TitanProto@pm.me \1F4CB";
+    color: #6b05ad;
+    cursor: copy;
+}
+#discord:hover:after {
+    content: " titanproto \1F4CB";
+    color: #6b05ad;
+    cursor: copy;
+}
+#badgeDiv {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
 
 .shiftRight {
     margin-left: 200px;
 }
+.contactButtons {
+    text-decoration: none;
+    color: #9c00ad;
+    transition-duration: 250ms;
+}
+.contactLink:hover {
+    color: #6b05ad;
+    transition-duration: 250ms;
+}
+.badges {
+    height: 31px;
+    width: 88px;
+}
+
 
 h1 {
     font-family: 'Flexi IBM VGA False', monospace;
@@ -47,4 +82,5 @@ h1 {
 body {
     background-color: #1d0030;
     color: white;
+    font-family: 'Courier New', monospace;
 }
