@@ -7,7 +7,7 @@
 #introTitle {
     position: relative;
     margin-bottom: -8px;
-    opacity: 90%;
+    opacity: 95%;
 }
 #introTitle span {
     transition-duration: 500ms;
@@ -41,16 +41,26 @@
     width: 100%;
     text-align: center;
 }
-
-#email:hover:after{
-    content: " TitanProto@pm.me \1F4CB";
+#email:after {
     color: #6b05ad;
     cursor: copy;
 }
-#discord:hover:after {
-    content: " titanproto \1F4CB";
+#email.copyable:hover:after {
+    content: " TitanProto@pm.me \01F4CB";
+}
+#email.copied:hover:after {
+    content: " TitanProto@pm.me \2714";
+}
+#discord:after {
     color: #6b05ad;
     cursor: copy;
+    text-decoration: none;
+}
+#discord.copyable:hover:after {
+    content: " titanproto \01F4CB";
+}
+#discord.copied:hover:after {
+    content: " titanproto \2714";
 }
 #badgeDiv {
     align-items: center;
@@ -81,11 +91,23 @@ h1 {
 }
 body {
     background-color: #1d0030;
+    /* background-color: black; */
+    background-image: radial-gradient(
+        #1d0030, black 250%
+    );
+    height: 100vh;
     color: white;
-    font-family: 'Courier New', monospace;
+    font-family:'NotoEmoji-Regular', 'Courier New', monospace;
     text-shadow: 0 0 5px;
 }
 ::selection {
     background: #00aec2;
     text-shadow: none;
+}
+
+@font-face {
+    font-family: "NotoEmoji-Regular";
+    src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");
+    size-adjust: 90%;
+    unicode-range: U+2714, U+1F4CB, U+2709;
 }

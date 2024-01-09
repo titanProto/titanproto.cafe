@@ -20,16 +20,20 @@
             <hr>
             <div class="shiftRight">
                 <p><i>i've always been bad at introductions, but here we go.</i><br>
-                hi, it's me, ari (generally titan online) :3 <br> whew, idrk what to say here, thought it might finally be a good idea to get some kind of presence online, so here i am world!</p>
+                hi, it's me, ari (generally titan online) :3 <br> whew, idrk what to say here</p>
                 <h2 id="aboutMeTitle">about me.</h2>
-                <p>i am suuuper interested in many things.. wayy too much in fact. i'm really in to cybersecurity and programming, and plan to make a career of that one day. i also play bass, and am in a band too [fembot page link]. i ocassionally attempt to do some art, but that often doesn't happen, or doesn't go so well.</p>
+                <p>
+                    i'm really into cybersecurity, networks and programming
+                    <br>also, i play bass too :3
+                </p>
+                <!-- <p>i am suuuper interested in many things.. wayy too much in fact. i'm really in to cybersecurity and programming, and plan to make a career of that one day. i also play bass, and am in a band too [fembot page link]. i ocassionally attempt to do some art, but that often doesn't happen, or doesn't go so well.</p> -->
             </div>
         </div>
         <div id="contacts">
             <br><br><hr>
-            <span class="contactButtons" id="email" onclick="navigator.clipboard.writeText('TitanProto@pm.me');">email</span>
+            <span class="contactButtons copyable" id="email" onclick="navigator.clipboard.writeText('TitanProto@pm.me'); this.classList.remove('copyable'); this.classList.add('copied')" onmouseover="this.classList.add('copyable'); this.classList.remove('copied');">email</span>
             <span> | </span>
-            <span class="contactButtons" id="discord" onclick="navigator.clipboard.writeText('titanproto');">discord</span>
+            <span class="contactButtons copyable" id="discord" onclick="navigator.clipboard.writeText('titanproto'); this.classList.remove('copyable'); this.classList.add('copied')" onmouseover="this.classList.add('copyable'); this.classList.remove('copied');">discord</span>
             <span> | </span>
             <a href="https://t.me/TitanProto" target="_blank" class="contactButtons contactLink">telegram</a>
             <span> | </span>
