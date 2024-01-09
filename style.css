@@ -10,10 +10,10 @@
     opacity: 90%;
 }
 #introTitle span {
-    transition-duration: 250ms;
+    transition-duration: 500ms;
 }
 #introTitle span:hover {
-    opacity: 25%;
+    opacity: 10%;
     transition-duration: 1000ms;
 }
 #irlName {
@@ -83,4 +83,9 @@ body {
     background-color: #1d0030;
     color: white;
     font-family: 'Courier New', monospace;
+    text-shadow: 0 0 5px;
+}
+::selection {
+    background: #00aec2;
+    text-shadow: none;
 }
