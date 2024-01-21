@@ -50,6 +50,7 @@
 }
 #email.copied:hover:after {
     content: " TitanProto@pm.me \2714";
+    cursor: default;
 }
 #discord:after {
     color: #6b05ad;
@@ -61,6 +62,7 @@
 }
 #discord.copied:hover:after {
     content: " titanproto \2714";
+    cursor: default;
 }
 #badgeDiv {
     align-items: center;
