@@ -43,7 +43,7 @@
 }
 #email:after {
     color: #6b05ad;
-    cursor: copy;
+    cursor: pointer;
 }
 #email.copyable:hover:after {
     content: " TitanProto@pm.me \01F4CB";
@@ -54,8 +54,7 @@
 }
 #discord:after {
     color: #6b05ad;
-    cursor: copy;
-    text-decoration: none;
+    cursor: pointer;
 }
 #discord.copyable:hover:after {
     content: " titanproto \01F4CB";
@@ -69,12 +68,24 @@
     text-align: center;
     margin-top: 100px;
 }
+#version {
+    text-align: center;
+    font-size: 14px;
+}
+#version a {
+    color: #6b05ad;
+    transition-duration: 1000ms;
+}
+#version a:hover {
+    text-shadow: 0 0 5px;
+    color: #00aec2;
+    transition-duration: 2500ms;
+}
 
 .shiftRight {
     margin-left: 200px;
 }
 .contactButtons {
-    text-decoration: none;
     color: #9c00ad;
     transition-duration: 250ms;
 }
@@ -87,7 +98,9 @@
     width: 88px;
 }
 
-
+a {
+    text-decoration: none;
+}
 h1 {
     font-family: 'Flexi IBM VGA False', monospace;
 }
@@ -107,6 +120,7 @@ body {
     text-shadow: none;
 }
 
+@import url('https://fonts.cdnfonts.com/css/flexi-ibm-vga-false');
 @font-face {
     font-family: "NotoEmoji-Regular";
     src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");

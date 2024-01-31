@@ -5,7 +5,134 @@
         <script type="text/javascript" src="script.js"></script>
         <style>
             @import url('https://fonts.cdnfonts.com/css/flexi-ibm-vga-false');
-            body {background-color: black;} /* attempt to fix the jarring loading delay from aws */
+            #introduction {
+                margin-top: 100px;
+                min-width: 800px;
+                width: 80%;
+                float: left;
+            }
+            #introTitle {
+                position: relative;
+                margin-bottom: -8px;
+                opacity: 95%;
+            }
+            #introTitle span {
+                transition-duration: 500ms;
+            }
+            #introTitle span:hover {
+                opacity: 0%;
+                transition-duration: 1000ms;
+            }
+            #irlName {
+                position: absolute;
+                color: #6b05ad;
+                margin: 0;
+            }
+            #pronouns {
+                margin: 0;
+                font-size: 14px;
+            }
+            #profilePicture {
+                float: left;
+                max-height: 200px;
+                max-width: 200px;
+                height: auto;
+                width: auto;
+                padding-left: 10%;
+            }
+            #aboutMeTitle {
+                margin-bottom: -10px;
+            }
+            #contacts {
+                clear: both;
+                width: 100%;
+                text-align: center;
+            }
+            #email:after {
+                color: #6b05ad;
+                cursor: pointer;
+            }
+            #email.copyable:hover:after {
+                content: " TitanProto@pm.me \01F4CB";
+            }
+            #email.copied:hover:after {
+                content: " TitanProto@pm.me \2714";
+                cursor: default;
+            }
+            #discord:after {
+                color: #6b05ad;
+                cursor: pointer;
+            }
+            #discord.copyable:hover:after {
+                content: " titanproto \01F4CB";
+            }
+            #discord.copied:hover:after {
+                content: " titanproto \2714";
+                cursor: default;
+            }
+            #badgeDiv {
+                align-items: center;
+                text-align: center;
+                margin-top: 100px;
+            }
+            #version {
+                text-align: center;
+                font-size: 14px;
+            }
+            #version a {
+                color: #6b05ad;
+                transition-duration: 1000ms;
+            }
+            #version a:hover {
+                text-shadow: 0 0 5px;
+                color: #00aec2;
+                transition-duration: 2500ms;
+            }
+
+            .shiftRight {
+                margin-left: 200px;
+            }
+            .contactButtons {
+                color: #9c00ad;
+                transition-duration: 250ms;
+            }
+            .contactLink:hover {
+                color: #6b05ad;
+                transition-duration: 250ms;
+            }
+            .badges {
+                height: 31px;
+                width: 88px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+            h1 {
+                font-family: 'Flexi IBM VGA False', monospace;
+            }
+            body {
+                background-color: #1d0030;
+                /* background-color: black; */
+                background-image: radial-gradient(
+                    #1d0030, black 250%
+                );
+                height: 100vh;
+                color: white;
+                font-family:'NotoEmoji-Regular', 'Courier New', monospace;
+                text-shadow: 0 0 5px;
+            }
+            ::selection {
+                background: #00aec2;
+                text-shadow: none;
+            }
+
+            @font-face {
+                font-family: "NotoEmoji-Regular";
+                src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");
+                size-adjust: 90%;
+                unicode-range: U+2714, U+1F4CB, U+2709;
+            }
         </style>
         <link rel="stylesheet" href="style.css">
         <title>titan</title>
@@ -42,7 +169,7 @@
         </div>
         <div id="version">
             <p><a href="https://titanproto.cafe">titanproto.cafe</a> ver 1.0.1</p>
-            <!-- <p><a href="testing.html">TESTING USAGE ONLY</a></p> -->
+            <p><a href="testing.html">TESTING USAGE ONLY</a></p>
         </div>
         <div id="badgeDiv">
             <img class="badges" src="webButtons/PBL_big.gif">
