@@ -120,7 +120,6 @@ body {
     text-shadow: none;
 }
 
-@import url('https://fonts.cdnfonts.com/css/flexi-ibm-vga-false');
 @font-face {
     font-family: "NotoEmoji-Regular";
     src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");
