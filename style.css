@@ -1,5 +1,6 @@
 #introduction {
     margin-top: 100px;
+    margin-left: 10%;
     min-width: 800px;
     width: 80%;
     float: left;
@@ -27,11 +28,11 @@
 }
 #profilePicture {
     float: left;
-    max-height: 200px;
-    max-width: 200px;
-    height: auto;
-    width: auto;
-    padding-left: 10%;
+    max-height: 525px;
+    max-width: 525px;
+    height: 100%;
+    width: 50%;
+    /* padding-left: 10%; */
 }
 #aboutMeTitle {
     margin-bottom: -10px;
@@ -83,7 +84,7 @@
 }
 
 .shiftRight {
-    margin-left: 200px;
+    /* margin-left: 60%; */
 }
 .contactButtons {
     color: #9c00ad;
