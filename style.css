@@ -32,7 +32,6 @@
     max-width: 525px;
     height: 100%;
     width: 50%;
-    /* padding-left: 10%; */
 }
 #aboutMeTitle {
     margin-bottom: -10px;
@@ -83,9 +82,6 @@
     transition-duration: 2500ms;
 }
 
-.shiftRight {
-    /* margin-left: 60%; */
-}
 .contactButtons {
     color: #9c00ad;
     transition-duration: 250ms;
@@ -127,3 +123,8 @@ body {
     size-adjust: 90%;
     unicode-range: U+2714, U+1F4CB, U+2709;
 }
+@font-face {
+    font-family: "Flexi IBM VGA False";
+    src: url("fonts/Flexi_IBM_VGA_False_437.ttf");
+}
+#loadOverlay{display: none;}
