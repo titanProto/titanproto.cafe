@@ -13,14 +13,23 @@
 #introTitle span {
     transition-duration: 500ms;
 }
-#introTitle span:hover {
-    opacity: 0%;
-    transition-duration: 1000ms;
-}
 #irlName {
     position: absolute;
     color: #6b05ad;
     margin: 0;
+    opacity: 0%;
+    transition-duration: 500ms;
+}
+#nameCard {
+    width: 25%;
+}
+#nameCard:hover #introTitle span {
+    opacity: 0%;
+    transition-duration: 1000ms;
+}
+#nameCard:hover #irlName {
+    opacity: 100%;
+    transition-duration: 1500ms;
 }
 #pronouns {
     margin: 0;
