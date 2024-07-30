@@ -1,0 +1,139 @@
+#introduction {
+    margin-top: 100px;
+    margin-left: 10%;
+    min-width: 800px;
+    width: 80%;
+    float: left;
+}
+#introTitle {
+    position: relative;
+    margin-bottom: -8px;
+    opacity: 95%;
+}
+#introTitle span {
+    transition-duration: 500ms;
+}
+#modpackName {
+    position: absolute;
+    color: #6b05ad;
+    margin: 0;
+    opacity: 0%;
+    transition-duration: 500ms;
+}
+#nameCard {
+    width: 25%;
+}
+#nameCard:hover #introTitle span {
+    opacity: 0%;
+    transition-duration: 1000ms;
+}
+#nameCard:hover #modpackName {
+    opacity: 100%;
+    transition-duration: 1500ms;
+}
+#pronouns {
+    margin: 0;
+    font-size: 14px;
+}
+#profilePicture {
+    float: left;
+    max-height: 525px;
+    max-width: 525px;
+    height: 100%;
+    width: 50%;
+}
+#aboutMeTitle {
+    margin-bottom: -10px;
+}
+#contacts {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+#email:after {
+    color: #6b05ad;
+    cursor: pointer;
+}
+#email.copyable:hover:after {
+    content: " TitanProto@pm.me \01F4CB";
+}
+#email.copied:hover:after {
+    content: " TitanProto@pm.me \2714";
+    cursor: default;
+}
+#discord:after {
+    color: #6b05ad;
+    cursor: pointer;
+}
+#discord.copyable:hover:after {
+    content: " titanproto \01F4CB";
+}
+#discord.copied:hover:after {
+    content: " titanproto \2714";
+    cursor: default;
+}
+#badgeDiv {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#version {
+    text-align: center;
+    font-size: 14px;
+}
+#version a {
+    color: #6b05ad;
+    transition-duration: 1000ms;
+}
+#version a:hover {
+    text-shadow: 0 0 5px;
+    color: #00aec2;
+    transition-duration: 2500ms;
+}
+
+.contactButtons {
+    color: #9c00ad;
+    transition-duration: 250ms;
+}
+.contactLink:hover {
+    color: #6b05ad;
+    transition-duration: 250ms;
+}
+.badges {
+    height: 31px;
+    width: 88px;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Flexi IBM VGA False', monospace;
+}
+body {
+    background-color: #1d0030;
+    /* background-color: black; */
+    background-image: radial-gradient(
+        #1d0030, black 250%
+    );
+    height: 100vh;
+    color: white;
+    font-family:'NotoEmoji-Regular', 'Courier New', monospace;
+    text-shadow: 0 0 5px;
+}
+::selection {
+    background: #00aec2;
+    text-shadow: none;
+}
+
+@font-face {
+    font-family: "NotoEmoji-Regular";
+    src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");
+    size-adjust: 90%;
+    unicode-range: U+2714, U+1F4CB, U+2709;
+}
+@font-face {
+    font-family: "Flexi IBM VGA False";
+    src: url("fonts/Flexi_IBM_VGA_False_437.ttf");
+}
+#loadOverlay{display: none;}
