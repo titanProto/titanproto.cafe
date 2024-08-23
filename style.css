@@ -55,10 +55,10 @@
     cursor: pointer;
 }
 #email.copyable:hover:after {
-    content: " TitanProto@pm.me \01F4CB";
+    content: " ari@titanproto.cafe \01F4CB";
 }
 #email.copied:hover:after {
-    content: " TitanProto@pm.me \2714";
+    content: " ari@titanproto.cafe \2714";
     cursor: default;
 }
 #discord:after {
