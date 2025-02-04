@@ -36,11 +36,11 @@
     font-size: 14px;
 }
 #profilePicture {
-    float: left;
+    /* float: left; */
     max-height: 525px;
     max-width: 525px;
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 #aboutMeTitle {
     margin-bottom: -10px;
@@ -102,6 +102,27 @@
 .badges {
     height: 31px;
     width: 88px;
+}
+
+/* flex stuff */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-left {
+    flex: 50%;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+/* responsive layout */
+@media (max-width: 500px) {
+    .flex-item-left, .flex-item-right {
+        flex: 100%;
+    }
 }
 
 a {
