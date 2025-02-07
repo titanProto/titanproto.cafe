@@ -1,6 +1,7 @@
 #introduction {
     margin-top: 100px;
     margin-left: 10%;
+    margin-right: 10%;
     min-width: 800px;
     width: 80%;
     float: left;
@@ -119,7 +120,7 @@
 }
 
 /* responsive layout */
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .flex-item-left, .flex-item-right {
         flex: 100%;
     }
