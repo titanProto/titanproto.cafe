@@ -18,6 +18,6 @@ window.onload = function typeWriter() {
   if (y < txt2.length) {
     document.getElementById("pronouns").innerHTML += txt2.charAt(y);
     y++;
-    setTimeout(typeWriter, speed);
   }
+  setTimeout(typeWriter, speed);
 }

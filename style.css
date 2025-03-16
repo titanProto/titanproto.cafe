@@ -1,4 +1,4 @@
-#introduction {
+#pageBody {
     margin-top: 100px;
     margin-left: 10%;
     margin-right: 10%;
@@ -96,10 +96,6 @@
     color: #9c00ad;
     transition-duration: 250ms;
 }
-.contactLink:hover {
-    color: #6b05ad;
-    transition-duration: 250ms;
-}
 .badges {
     height: 31px;
     width: 88px;
@@ -127,8 +123,13 @@
 }
 
 a {
+    color: #9c00ad;
     text-decoration: none;
 }
+a:hover {
+    color: #6b05ad;
+    transition-duration: 250ms;
+} 
 h1 {
     font-family: 'Flexi IBM VGA False', monospace;
 }
