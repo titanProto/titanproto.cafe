@@ -11,10 +11,12 @@ footer.innerHTML = `
         <span> | </span>
         <a href="https://github.com/titanProto" target="_blank" class="contactButtons">github</a>
         <span> | </span>
+        <a href="https://steamcommunity.com/id/TitanProto/" target="_blank" class="contactButtons">steam</a>
+        <span> | </span>
         <a href="https://www.last.fm/user/titanproto" target="_blank" class="contactButtons">last.fm</a>
     </div>
     <div id="version">
-        <p><a href="/">titanproto.cafe</a> 1.3.0</p>
+        <p><a href="/">titanproto.cafe</a> 1.3.1</p>
     </div>
     <div id="badgeDiv">
         <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
