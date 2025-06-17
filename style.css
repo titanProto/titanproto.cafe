@@ -1,10 +1,11 @@
 #pageBody {
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 800px;
+    /* min-width: 546px; */
     width: 80%;
-    float: left;
+    float: center;
 }
 #introTitle {
     position: relative;
@@ -38,10 +39,10 @@
 }
 #profilePicture {
     /* float: left; */
-    max-height: 525px;
-    max-width: 525px;
-    height: 100%;
-    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
 }
 #aboutMeTitle {
     margin-bottom: -10px;
@@ -56,10 +57,10 @@
     cursor: pointer;
 }
 #email.copyable:hover:after {
-    content: " ari@titanproto.cafe \01F4CB";
+    content: " titan@titanproto.cafe \25A1";
 }
 #email.copied:hover:after {
-    content: " ari@titanproto.cafe \2714";
+    content: " titan@titanproto.cafe \2713";
     cursor: default;
 }
 #discord:after {
@@ -67,20 +68,20 @@
     cursor: pointer;
 }
 #discord.copyable:hover:after {
-    content: " titanproto \01F4CB";
+    content: " titanproto \25A1";
 }
 #discord.copied:hover:after {
-    content: " titanproto \2714";
+    content: " titanproto \2713";
     cursor: default;
 }
 #badgeDiv {
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 32px;
 }
 #version {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 #version a {
     color: #6b05ad;
@@ -92,6 +93,12 @@
     transition-duration: 2500ms;
 }
 
+#navigation {
+    font-family: 'Flexi IBM VGA False', monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
 .contactButtons {
     color: #9c00ad;
     transition-duration: 250ms;
@@ -99,6 +106,9 @@
 .badges {
     height: 31px;
     width: 88px;
+}
+.active {
+    text-decoration: underline;
 }
 
 /* flex stuff */
@@ -116,7 +126,7 @@
 }
 
 /* responsive layout */
-@media (max-width: 900px) {
+@media (max-width: 840px) {
     .flex-item-left, .flex-item-right {
         flex: 100%;
     }
@@ -132,16 +142,16 @@ a:hover {
 } 
 h1 {
     font-family: 'Flexi IBM VGA False', monospace;
+    font-size: 32px;
 }
 body {
     background-color: #1d0030;
-    /* background-color: black; */
     background-image: radial-gradient(
         #1d0030, black 250%
     );
     height: 100vh;
     color: white;
-    font-family:'NotoEmoji-Regular', 'Courier New', monospace;
+    font-family: 'Flexi IBM VGA False', monospace;
     text-shadow: 0 0 5px;
 }
 ::selection {
@@ -157,6 +167,5 @@ body {
 }
 @font-face {
     font-family: "Flexi IBM VGA False";
-    src: url("fonts/Flexi_IBM_VGA_False_437.ttf");
+    src: url("fonts/Flexi_IBM_VGA_False.ttf");
 }
-#loadOverlay{display: none;}
