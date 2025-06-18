@@ -38,9 +38,9 @@
     font-size: 14px;
 }
 #profilePicture {
-    /* float: left; */
-    max-height: 400px;
-    max-width: 400px;
+    float: right;
+    max-height: 500px;
+    max-width: 500px;
     height: auto;
     width: auto;
 }
