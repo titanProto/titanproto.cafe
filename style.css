@@ -114,6 +114,23 @@
     text-decoration: underline;
 }
 
+.icon {
+    height: 38px;
+    vertical-align: middle;
+}
+
+@keyframes spin3D {
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
+}
+.spin3D {animation: spin3D 2.5s ease-in-out 1;}
+
+@keyframes spin2D {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(720deg)}
+}
+.spin2D {animation: spin2D 1s ease-in-out 1;}
+
 /* flex stuff */
 .flex-container {
     display: flex;
