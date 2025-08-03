@@ -60,9 +60,7 @@ if (document.cookie == '') {
   var currentEevee = 'eevee';
 }
 var currentEevee = document.cookie;
-console.log(currentEevee);
 var v = (eeveelutions.indexOf(currentEevee));
-console.log(v);
 
 function changeImage() {
   if (v >= 8) {
@@ -72,10 +70,8 @@ function changeImage() {
     v++;
   }
   currentEevee = eeveelutions[v]
-  console.log(eeveelutionsFiles[currentEevee])
   document.getElementById("eevee").src = eeveelutionsFiles[currentEevee];
   document.cookie = currentEevee
-  // console.log(document.cookie)
 }
 function spin3D(clicked_id) {
   element = document.getElementById(clicked_id)
