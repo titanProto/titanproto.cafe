@@ -23,6 +23,25 @@ window.onload = function typeWriter() {
   setTimeout(typeWriter, speed);
 }
 
+function setCookie(cname, cvalue) {
+  document.cookie = cname + "=" + cvalue + ";";
+}
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let b = 0; b <ca.length; b++) {
+    let c = ca[b];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 // const eeveelutions = [
 //   ['eevee', '/icons/eeveelutions/eevee.png'], 
 //   ['vapoureon', '/icons/eeveelutions/vapoureon.png'], 
@@ -56,22 +75,23 @@ const eeveelutionsFiles = {
   'glaceon': '/icons/eeveelutions/glaceon.png', 
   'sylveon': '/icons/eeveelutions/sylveon.png'
 };
-if (document.cookie == '') {
-  var currentEevee = 'eevee';
+if (getCookie('eeveeCookie') != '') {
+  var currentEevee = getCookie('eeveeCookie')
+} else {
+  setCookie('eeveeCookie', 'eevee')
+  var currentEevee = getCookie('eeveeCookie')
 }
-var currentEevee = document.cookie;
 var v = (eeveelutions.indexOf(currentEevee));
 
 function changeImage() {
   if (v >= 8) {
     v = 0;
-  }
-  else {
+  } else {
     v++;
   }
   currentEevee = eeveelutions[v]
   document.getElementById("eevee").src = eeveelutionsFiles[currentEevee];
-  document.cookie = currentEevee
+  setCookie('eeveeCookie', currentEevee)
 }
 function spin3D(clicked_id) {
   element = document.getElementById(clicked_id)
