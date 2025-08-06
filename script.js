@@ -8,6 +8,11 @@ var speed = 100; /* The speed/duration of the effect in milliseconds */
 
 window.onload = function typeWriter() {
   document.getElementById("eevee").src = eeveelutionsFiles[currentEevee]; /* to fix eevee */
+  if (vats == 0) { /* to fix fnv */
+    document.getElementById("fnv").src = "/icons/fnv_ranger.png"; 
+  } else {
+    document.getElementById("fnv").src = "/icons/fnv_ranger_vats.png"; 
+  }
   if (i < txt0.length) {
     document.getElementById("irlName").innerHTML += txt0.charAt(i);
     i++;
@@ -83,16 +88,38 @@ if (getCookie('eeveeCookie') != '') {
 }
 var v = (eeveelutions.indexOf(currentEevee));
 
-function changeImage() {
-  if (v >= 8) {
-    v = 0;
-  } else {
-    v++;
-  }
-  currentEevee = eeveelutions[v]
-  document.getElementById("eevee").src = eeveelutionsFiles[currentEevee];
-  setCookie('eeveeCookie', currentEevee)
+if (getCookie('vatsCookie') != '') {
+  var vats = getCookie('vatsCookie')
+} else {
+  setCookie('vatsCookie', 0)
+  var vats = getCookie('vatsCookie')
 }
+
+
+function changeImage(clicked_id) {
+  if (clicked_id == 'eevee') {
+    if (v >= 8) {
+      v = 0;
+    } else {
+      v++;
+    }
+    currentEevee = eeveelutions[v];
+    document.getElementById("eevee").src = eeveelutionsFiles[currentEevee];
+    setCookie('eeveeCookie', currentEevee);
+  } else if (clicked_id == 'fnv') {
+    let vatsSound = new Audio('/assets/Fallout_Vats.wav');
+    vatsSound.volume = 0.32;
+    vatsSound.play();
+    if (vats == 0) {
+      document.getElementById("fnv").src = "/icons/fnv_ranger_vats.png";
+      vats = 1
+    } else if (vats == 1) {
+      document.getElementById("fnv").src = "/icons/fnv_ranger.png";
+      vats = 0
+    }
+    setCookie('vatsCookie', vats);
+  }
+} 
 function spin3D(clicked_id) {
   element = document.getElementById(clicked_id)
   element.classList.add("spin3D")
