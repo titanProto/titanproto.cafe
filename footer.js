@@ -16,7 +16,7 @@ footer.innerHTML = `
         <a href="https://www.last.fm/user/titanproto" target="_blank" class="contactButtons">last.fm</a>
     </div>
     <div id="version">
-        <p><a href="/">titanproto.cafe</a> 1.4.2</p>
+        <p><a href="/">titanproto.cafe</a> 1.4.3</p>
     </div>
     <div id="badgeDiv">
         <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
@@ -30,6 +30,7 @@ footer.innerHTML = `
         <a href="https://cyber.dabamos.de/88x31/index.html" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/88x31.gif" title="badges ^w^"></a>
         <img class="badges" src="https://ari.titanproto.cafe/badges/antinazi.gif">
         <img class="badges" src="https://ari.titanproto.cafe/badges/piracy.gif" title="sailing the high seas">
+	<img class="badges" src="https://ari.titanproto.cafe/badges/anti-ai.gif" title="if you use ai, you're a piece of shit, idgaf abt you're 'use-case' fuck you :3">
         <img class="badges" src="https://ari.titanproto.cafe/badges/antinft.gif">
         <a href="https://jellyfin.org" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/jellyfin.gif"></a>
     </div>
