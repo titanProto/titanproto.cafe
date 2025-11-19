@@ -11,9 +11,9 @@ window.onload = function typeWriter() {
     eeveelutionsFiles[currentEevee]; /* to fix eevee */
   if (vats == 0) {
     /* to fix fnv */
-    document.getElementById("fnv").src = "icons/fnv_ranger.png";
+    document.getElementById("fnv").src = "about-me-icons/fnv_ranger.png";
   } else {
-    document.getElementById("fnv").src = "icons/fnv_ranger_vats.png";
+    document.getElementById("fnv").src = "about-me-icons/fnv_ranger_vats.png";
   }
   if (i < txt0.length) {
     document.getElementById("irlName").innerHTML += txt0.charAt(i);
@@ -72,15 +72,15 @@ const eeveelutions = [
   "sylveon",
 ];
 const eeveelutionsFiles = {
-  eevee: "icons/eeveelutions/eevee.png",
-  vapoureon: "icons/eeveelutions/vapoureon.png",
-  jolteon: "icons/eeveelutions/jolteon.png",
-  flareon: "icons/eeveelutions/flareon.png",
-  espeon: "icons/eeveelutions/espeon.png",
-  umbreon: "icons/eeveelutions/umbreon.png",
-  leafeon: "icons/eeveelutions/leafeon.png",
-  glaceon: "icons/eeveelutions/glaceon.png",
-  sylveon: "icons/eeveelutions/sylveon.png",
+  eevee: "about-me-icons/eeveelutions/eevee.png",
+  vapoureon: "about-me-icons/eeveelutions/vapoureon.png",
+  jolteon: "about-me-icons/eeveelutions/jolteon.png",
+  flareon: "about-me-icons/eeveelutions/flareon.png",
+  espeon: "about-me-icons/eeveelutions/espeon.png",
+  umbreon: "about-me-icons/eeveelutions/umbreon.png",
+  leafeon: "about-me-icons/eeveelutions/leafeon.png",
+  glaceon: "about-me-icons/eeveelutions/glaceon.png",
+  sylveon: "about-me-icons/eeveelutions/sylveon.png",
 };
 if (getCookie("eeveeCookie") != "") {
   var currentEevee = getCookie("eeveeCookie");
@@ -112,10 +112,10 @@ function changeImage(clicked_id) {
     vatsSound.volume = 0.32;
     vatsSound.play();
     if (vats == 0) {
-      document.getElementById("fnv").src = "icons/fnv_ranger_vats.png";
+      document.getElementById("fnv").src = "about-me-icons/fnv_ranger_vats.png";
       vats = 1;
     } else if (vats == 1) {
-      document.getElementById("fnv").src = "icons/fnv_ranger.png";
+      document.getElementById("fnv").src = "about-me-icons/fnv_ranger.png";
       vats = 0;
     }
     setCookie("vatsCookie", vats);
