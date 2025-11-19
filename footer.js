@@ -1,4 +1,4 @@
-const footer = document.createElement('template');
+const footer = document.createElement("template");
 
 footer.innerHTML = `
     <div id="contacts">
@@ -16,7 +16,7 @@ footer.innerHTML = `
         <a href="https://www.last.fm/user/titanproto" target="_blank" class="contactButtons">last.fm</a>
     </div>
     <div id="version">
-        <p><a href="/">titanproto.cafe</a> 1.4.3</p>
+        <p><a href="/">titanproto.cafe</a> 1.4.4</p>
     </div>
     <div id="badgeDiv">
         <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
