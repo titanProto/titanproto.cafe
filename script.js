@@ -1,8 +1,8 @@
 var i = 0;
 var x = 0;
 var y = 0;
-var txt0 = "ari"; /* The text */
-var txt1 = "titan.";
+var txt0 = "titanProto"; /* The text */
+var txt1 = "ari.";
 var txt2 = "she/her, they/them";
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 
