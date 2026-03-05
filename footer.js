@@ -17,6 +17,9 @@ footer.innerHTML = `
     </div>
     <div id="version">
         <p><a href="/">titanproto.cafe</a> 1.5.0</p>
+		<p><i>this website and <br>
+		any of my projects past and future <br>
+		are made without the usage of ai/generative tools</i></p>
     </div>
     <div id="badgeDiv">
         <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
