@@ -118,12 +118,56 @@ body {
 
 @font-face {
     font-family: "NotoEmoji-Regular";
-    src:url("fonts/NotoEmoji-Regular.ttf") format("truetype");
+    src:url("../fonts/NotoEmoji-Regular.ttf") format("truetype");
     size-adjust: 90%;
     unicode-range: U+2714, U+1F4CB, U+2709;
 }
 @font-face {
     font-family: "Flexi IBM VGA False";
-    src: url("fonts/Flexi_IBM_VGA_False.ttf");
+    src: url("../fonts/Flexi_IBM_VGA_False.ttf");
 }
 
+/* flex stuff */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-left {
+    flex: 50%;
+    margin-bottom: 10px;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+/* responsive layout */
+@media (max-width: 840px) {
+    .flex-item-left, .flex-item-right {
+        flex: 100%;
+    }
+}
+
+.profilePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
+.pronouns {
+    margin: 0;
+    font-size: 14px;
+}
+
+.name {
+	margin: 0;
+}
+
+#mainGap {
+	margin: 40px;
+}
