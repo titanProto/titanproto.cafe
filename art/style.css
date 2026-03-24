@@ -1,0 +1,173 @@
+#pageBody {
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 800px;
+    /* min-width: 546px; */
+    width: 80%;
+    float: center;
+}
+
+#contacts {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+#email:after {
+    color: #6b05ad;
+    cursor: pointer;
+}
+#email.copyable:hover:after {
+    content: " titan@titanproto.cafe \25A1";
+}
+#email.copied:hover:after {
+    content: " titan@titanproto.cafe \2713";
+    cursor: default;
+}
+#discord:after {
+    color: #6b05ad;
+    cursor: pointer;
+}
+#discord.copyable:hover:after {
+    content: " titanproto \25A1";
+}
+#discord.copied:hover:after {
+    content: " titanproto \2713";
+    cursor: default;
+}
+#badgeDiv {
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+}
+#version {
+    text-align: center;
+    font-size: 16px;
+}
+#version a {
+    color: #6b05ad;
+    transition-duration: 1000ms;
+}
+#version a:hover {
+    text-shadow: 0 0 5px;
+    color: #00aec2;
+    transition-duration: 2500ms;
+}
+
+#navigation {
+    font-family: 'Flexi IBM VGA False', monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contactButtons {
+    color: #9c00ad;
+    transition-duration: 250ms;
+}
+.badges {
+    height: 31px;
+    width: 88px;
+}
+.active {
+    text-decoration: underline;
+}
+
+.icon {
+    height: 38px;
+    vertical-align: middle;
+}
+
+@keyframes spin3D {
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
+}
+.spin3D {animation: spin3D 2.5s ease-in-out 1;}
+
+@keyframes spin2D {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(720deg)}
+}
+.spin2D {animation: spin2D 1s ease-in-out 1;}
+
+a {
+    color: #9c00ad;
+    text-decoration: none;
+}
+a:hover {
+    color: #6b05ad;
+    transition-duration: 250ms;
+} 
+h1 {
+    font-family: 'Flexi IBM VGA False', monospace;
+    font-size: 32px;
+}
+body {
+    background-color: #1d0030;
+    background-image: radial-gradient(
+        #1d0030, black 250%
+    );
+    height: 100vh;
+    color: white;
+    font-family: 'Flexi IBM VGA False', monospace;
+    text-shadow: 0 0 5px;
+}
+::selection {
+    background: #00aec2;
+    text-shadow: none;
+}
+
+@font-face {
+    font-family: "NotoEmoji-Regular";
+    src:url("../fonts/NotoEmoji-Regular.ttf") format("truetype");
+    size-adjust: 90%;
+    unicode-range: U+2714, U+1F4CB, U+2709;
+}
+@font-face {
+    font-family: "Flexi IBM VGA False";
+    src: url("../fonts/Flexi_IBM_VGA_False.ttf");
+}
+
+/* flex stuff */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-left {
+    flex: 50%;
+    margin-bottom: 10px;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+/* responsive layout */
+@media (max-width: 840px) {
+    .flex-item-left, .flex-item-right {
+        flex: 100%;
+    }
+}
+
+.profilePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
+.pronouns {
+    margin: 0;
+    font-size: 14px;
+}
+
+.name {
+	margin: 0;
+}
+
+#mainGap {
+	margin: 40px;
+}
