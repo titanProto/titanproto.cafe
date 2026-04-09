@@ -3,6 +3,7 @@
 	<head>
 		<!-- please ensure that the correct footer script and stylesheets are linked -->
 		<script type="text/javascript" src="../../footer.js" defer></script>
+		<script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" href="../style.css">
 		<title>titan</title>
 		<meta name="description" content="hey there~ :3">
@@ -26,14 +27,26 @@
 			<hr class="mainGap">
 			<div id="ari" class="flex-container">
 				<div class="flex-item-left">
-					<a href="https://nuibunny64coms.carrd.co/" target="_blank"><img class="profilePicture" src="../../headshot_ari_clothed_alt.png" title="this is ari! art by MaxineVEVO, click to go to her site!" alt="the cutest deer"></a>
+					<a href="https://nuibunny64coms.carrd.co/" target="_blank"><img class="profilePicture" src="/art/ari/headshot_ari_clothed_alt.png" title="this is ari! art by MaxineVEVO, click to go to her site!" alt="the cutest deer"></a>
 				</div>
 				<div class="flex-item-right">
 					<h1 class="name">ari</h1>
 					<span><i class="pronouns">she/they</i></span>
 					<p>
-						@--- BRING IN TEXT FROM PREV PAGE ---@
-
+						ari is my main fursona and who i consider to be the truest reflection of myself.
+						<br>
+						i don't really need to tell y'all much about her, she's me! but i certainly can tell you a little about her creation &gt;:3
+						<br>
+						for a little while now i knew that i wanted a deer sona... well actually i was sorta between a deer and an otter for a while, but eventually i settled on a deer as the species
+						and yes she's just a regular deer, not a reindeer, even though she has antlers. trans-gen-deer if you will :3
+						<br>
+						she was drawn by <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a>.
+						and honestly maxine did a phenominal job turning my half-baked ideas of what i wanted in to something that i'm so happy with now.
+						at first i was gonna make a 'natural' coloured deer, but once maxine had made her up with natural colours,
+						i asked if it'd be possible to see her in ourple, and i fucking loved it!
+						<br>
+						some advice for anyone who is comissioning a ref sheet (or any art) for the first time (and is having some trouble getting their ideas in to words)
+						would be to make a jamboard, like mine <a href="#jamboards">here</a>.
 						<br><br>
 						you can find more art of ari below!
 					</p>
@@ -43,14 +56,50 @@
 			<div class="artContainer">
 				<h2>ref sheet</h2>
 				<p>artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a></p>
-				<img class="refSheet" src="/art/ref_sheet_ari_clothes_alt.png" alt="ari's reference sheet (clothed alt)">
+				<a onclick="changeRef()" class="imageChanger">click for the non-clothed alt image! (not NSFW!)</a>
+				<img class="refSheet" id="refsheet1" src="/art/ari/ref_sheet_ari_clothes_alt.png" alt="ari's reference sheet (clothed alt)">
 				<!--<img class="refSheet" src="/art/ref_sheet_ari.png" alt="ari's reference sheet">-->
 			</div>
 			<hr class="mainGap">
 			<div class="artContainer">
-				<h2>emote pack 1 and 2</h2>
-				<img src="../../art/emotes/ari_emote_1.png" alt="ari blep emote" class="emoteArt">
-				<img src="../../art/emotes/ari_emote_2.png" alt="ari giggle emote" class="emoteArt">
+				<h2>emotes</h2>
+				<div>
+					<h3>pack 1</h3>
+					<p>artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a></p>
+					<div class="emoteContainer">
+						<img src="/art/ari/emotes/ari_emote_1.png" alt="ari blep emote" class="emoteArt emote1">
+						<img src="/art/ari/emotes/ari_emote_2.png" alt="ari giggle emote" class="emoteArt emote2">
+						<img src="/art/ari/emotes/ari_emote_3.png" alt="ari think emote" class="emoteArt emote3">
+						<img src="/art/ari/emotes/ari_emote_4.png" alt="ari thumbs up emote" class="emoteArt emote4">
+						<img src="/art/ari/emotes/ari_emote_5.png" alt="ari peek emote" class="emoteArt emote5">
+						<img src="/art/ari/emotes/ari_emote_6.png" alt="ari heart emote" class="emoteArt emote6">
+					</div>
+				</div>
+				<div>
+					<h3>pack 2</h3>
+					<p>artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a></p>
+					<div class="emoteContainer">
+						<img src="/art/ari/emotes/ari_emote_7.png" alt="ari eep emote" class="emoteArt emote1">
+						<img src="/art/ari/emotes/ari_emote_8.png" alt="ari sip emote" class="emoteArt emote2">
+						<img src="/art/ari/emotes/ari_emote_9.png" alt="ari cry emote" class="emoteArt emote3">
+						<img src="/art/ari/emotes/ari_emote_10.png" alt="ari silly emote" class="emoteArt emote4">
+						<img src="/art/ari/emotes/ari_emote_11.png" alt="ari smug emote" class="emoteArt emote5">
+						<img src="/art/ari/emotes/ari_emote_12.png" alt="ari angy emote" class="emoteArt emote6">
+					</div>
+				</div>
+			</div>
+			<div class="artContainer" id="jamboards">
+				<h2>jamboards</h2>
+				<p>creator: me!</p>
+				<p>
+					ok yeah i wouldn't argue this is 'art' per-se
+					but i thought it might make for good perspective of
+					what the ideas were behind her design and creation<br>
+					just follow the two links below to find them!<br>
+				</p>
+				<a href="/art/ari/jamboards/jamboard.png">main jamboard!</a>
+				|
+				<a href="/art/ari/jamboards/jamboard_clothes.png">clothes jamboard!</a>
 			</div>
 		</div>
 	</body>

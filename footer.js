@@ -19,7 +19,8 @@ footer.innerHTML = `
         <p><a href="/">titanproto.cafe</a> 1.5.0</p>
 		<p><i>this website and <br>
 		any of my projects past and future <br>
-		are made without the usage of ai/generative tools</i></p>
+		are made without the usage of ai/generative tools</i><br>	
+		</p>
     </div>
     <div id="badgeDiv">
         <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
@@ -37,6 +38,13 @@ footer.innerHTML = `
         <img class="badges" src="https://ari.titanproto.cafe/badges/antinft.gif">
         <a href="https://jellyfin.org" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/jellyfin.gif"></a>
     </div>
+	<p id="license">
+		<i>this site is licensed under the GNU GPL v3.0</i><br>
+		<i>additionally, NONE of the content on,
+		this site, all subdomains, and all of my projects
+		are permitted to be used in the training of or manipulated by
+		ai/generative tools of any kind</i>
+	</p>
 `;
 
 document.body.appendChild(footer.content);

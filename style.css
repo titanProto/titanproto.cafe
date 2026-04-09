@@ -95,6 +95,10 @@
     color: #00aec2;
     transition-duration: 2500ms;
 }
+#license {
+	text-align: center;
+	font-size: 12px;
+}
 
 #navigation {
     font-family: 'Flexi IBM VGA False', monospace;
