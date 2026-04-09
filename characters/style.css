@@ -168,6 +168,22 @@ body {
 	margin: 0;
 }
 
-#mainGap {
+.mainGap {
 	margin: 40px;
+}
+
+.artContainer {
+	width: 80%;
+	height: auto;
+}
+
+.refSheet {
+	height: auto;
+	width: 100%;
+}
+
+.emoteArt {
+	max-width: 250px;
+	height: auto;
+	width: auto;
 }
