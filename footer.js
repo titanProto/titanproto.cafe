@@ -18,25 +18,26 @@ footer.innerHTML = `
     <div id="version">
         <p><a href="/">titanproto.cafe</a> 1.5.0</p>
 		<p><i>this website and <br>
-		any of my projects past and future <br>
-		are made without the usage of ai/generative tools</i><br>	
+		all of my projects past, present and future <br>
+		are made by a real human<br>
+		without the usage of ai/generative tools</i><br>	
 		</p>
     </div>
     <div id="badgeDiv">
-        <a href="https://ari.titanproto.cafe"><img class="badges" src="https://ari.titanproto.cafe/badges/titanproto.gif"></a>
-        <img class="badges" src="https://ari.titanproto.cafe/badges/PBL_big.gif">
-        <a href="https://archlinux.org" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/archlinux.gif" title="arch btw"></a>
-        <img class="badges" src="https://ari.titanproto.cafe/badges/queerpride.gif" title="queer asf">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/nonbinary.gif" title="eeeenbyyy asf">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/transnow2.gif" title="trans rights are human rights">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/tyg.gif" title=":3">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/paws.gif" title=":3c">
-        <a href="https://cyber.dabamos.de/88x31/index.html" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/88x31.gif" title="badges ^w^"></a>
-        <img class="badges" src="https://ari.titanproto.cafe/badges/antinazi.gif">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/piracy.gif" title="sailing the high seas">
-	<img class="badges" src="https://ari.titanproto.cafe/badges/anti-ai.gif" title="if you use ai, you're a piece of shit, idgaf abt your 'use-case' fuck you :3">
-        <img class="badges" src="https://ari.titanproto.cafe/badges/antinft.gif">
-        <a href="https://jellyfin.org" target="_blank"><img class="badges" src="https://ari.titanproto.cafe/badges/jellyfin.gif"></a>
+        <a href="https://ari.titanproto.cafe"><img class="badges" src="/badges/titanproto.gif"></a>
+        <img class="badges" src="/badges/PBL_big.gif">
+        <a href="https://archlinux.org" target="_blank"><img class="badges" src="/badges/archlinux.gif" title="arch btw"></a>
+        <img class="badges" src="/badges/queerpride.gif" title="queer asf">
+        <img class="badges" src="/badges/nonbinary.gif" title="eeeenbyyy asf">
+        <img class="badges" src="/badges/transnow2.gif" title="trans rights are human rights">
+        <img class="badges" src="/badges/tyg.gif" title=":3">
+        <img class="badges" src="/badges/paws.gif" title=":3c">
+        <a href="https://cyber.dabamos.de/88x31/index.html" target="_blank"><img class="badges" src="/badges/88x31.gif" title="badges ^w^"></a>
+        <img class="badges" src="/badges/antinazi.gif">
+        <img class="badges" src="/badges/piracy.gif" title="sailing the high seas">
+		<img class="badges" src="/badges/anti-ai.gif" title="if you use ai, you're a piece of shit, idgaf abt your 'use-case' fuck you :3">
+        <img class="badges" src="/badges/antinft.gif">
+        <a href="https://jellyfin.org" target="_blank"><img class="badges" src="/badges/jellyfin.gif"></a>
     </div>
 	<p id="license">
 		<i>this site is licensed under the GNU GPL v3.0</i><br>
