@@ -2,27 +2,24 @@
 <html>
 	<head>
 		<!-- please ensure that the correct footer script and stylesheets are linked -->
-		<script type="text/javascript" src="../../footer.js" defer></script>
+		<script type="text/javascript" src="/footer.js" defer></script>
 		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" href="../style.css">
-		<title>titan</title>
+		<link rel="stylesheet" href="/characters/style.css">
+		<title>ari</title>
 		<meta name="description" content="hey there~ :3">
 		<meta charset="UTF-8">
-		<link rel="icon" type="image/png" href="../../favicon/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
-		<link rel="icon" href="../../favicon/favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
-		<link rel="manifest" href="../../favicon/site.webmanifest">
+		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+		<link rel="icon" href="/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
 	</head>
 	<body>
 		<div id="pageBody">
 			<h1>titan.</h1>
 			<div id="navigation">
 				<!-- please ensure the correct nav option is selected -->
-				<a href="/" id="home">home</a>
-				| <a href="/projects/" id="projects">projects</a>
-				| <a href="/comingout/" id="comingout">coming out</a>
-				| <a class="active" href="/characters/" id="chracters">characters</a>
+				<script type=text/javascript src="/navbar.js"></script>
 			</div>
 			<hr class="mainGap">
 			<div id="ari" class="flex-container">
@@ -40,7 +37,7 @@
 						for a little while now i knew that i wanted a deer sona... well actually i was sorta between a deer and an otter for a while, but eventually i settled on a deer as the species
 						and yes she's just a regular deer, not a reindeer, even though she has antlers. trans-gen-deer if you will :3
 						<br>
-						she was drawn by <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a>.
+						she was drawn by <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO (aka nuibunny)</a>.
 						and honestly maxine did a phenominal job turning my half-baked ideas of what i wanted in to something that i'm so happy with now.
 						at first i was gonna make a 'natural' coloured deer, but once maxine had made her up with natural colours,
 						i asked if it'd be possible to see her in ourple, and i fucking loved it!
@@ -55,10 +52,35 @@
 			<hr class="mainGap">
 			<div class="artContainer">
 				<h2>ref sheet</h2>
-				<p>artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a></p>
-				<a onclick="changeRef()" class="imageChanger">click for the non-clothed alt image! (not NSFW!)</a>
+				<p>
+					artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a><br>
+					<a onclick="changeRef()" class="imageChanger">click for the non-clothed alt image! (not NSFW!)</a>
+				</p>
 				<img class="refSheet" id="refsheet1" src="/art/ari/ref_sheet_ari_clothes_alt.png" alt="ari's reference sheet (clothed alt)">
 				<!--<img class="refSheet" src="/art/ref_sheet_ari.png" alt="ari's reference sheet">-->
+			</div>
+			<hr class="mainGap">
+			<div class="artContainer">
+				<h2>headshot</h2>
+				<p>
+					artist: <a href="https://nuibunny64coms.carrd.co/" target="_blank">MaxineVEVO</a>
+					<br>
+					this piece is from my ref sheet, just rendered out seperately
+					<br>
+					<a onclick="changeHeadshot()" class="imageChanger">click for the non-clothed alt image! (not NSFW!)</a>
+				</p>
+				<img class="headshot" id="headshot1" src="/art/ari/headshot_ari_clothed_alt.png" alt="ari's headshot (clothed alt)">
+				<p>
+					also, i have had <b>stickers</b>
+					made of this headshot! <i>NOT FOR SALE!</i>
+					<br>
+					thanks to
+					<a href="https://stickerchicken.com.au/" target="_blank">stickerchicken</a>
+					for these, they turned out amazing! :3
+					<br>
+					eventually i'll also be getting sticker sheets made of each emote pack too! &gt;:3
+				</p>
+				<img class="headshot" src="/art/ari/stickers.jpg" alt="stickers of ari's headshot piece">
 			</div>
 			<hr class="mainGap">
 			<div class="artContainer">
@@ -97,9 +119,10 @@
 					what the ideas were behind her design and creation<br>
 					just follow the two links below to find them!<br>
 				</p>
-				<a href="/art/ari/jamboards/jamboard.png">main jamboard!</a>
+				<a onclick="changeJamboard(this.id)" class="imageChanger" id="mainJamboard">main jamboard!</a>
 				|
-				<a href="/art/ari/jamboards/jamboard_clothes.png">clothes jamboard!</a>
+				<a onclick="changeJamboard(this.id)" class="imageChanger" id="clothesJamboard">clothes jamboard!</a>
+				<img id="jamboard1" class="jamboard" src="/art/ari/jamboards/jamboard.png" alt="ari's main jamboard">
 			</div>
 		</div>
 	</body>

@@ -16,7 +16,7 @@ footer.innerHTML = `
         <a href="https://www.last.fm/user/titanproto" target="_blank" class="contactButtons">last.fm</a>
     </div>
     <div id="version">
-        <p><a href="/">titanproto.cafe</a> 1.5.0</p>
+        <p><a href="/">titanproto.cafe</a> 2.0.0</p>
 		<p><i>this website and <br>
 		all of my projects past, present and future <br>
 		are made by a real human<br>

@@ -185,6 +185,13 @@ body {
     background: #00aec2;
     text-shadow: none;
 }
+hr {
+    color: white;
+}
+html {
+  margin: 0;
+  overscroll-behavior: none;
+}
 
 @font-face {
     font-family: "NotoEmoji-Regular";

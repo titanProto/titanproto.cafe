@@ -123,6 +123,13 @@ body {
     background: #00aec2;
     text-shadow: none;
 }
+hr {
+    color: white;
+}
+html {
+  margin: 0;
+  overscroll-behavior: none;
+}
 
 @font-face {
     font-family: "NotoEmoji-Regular";
@@ -227,4 +234,21 @@ body {
 
 .imageChanger {
 	cursor: pointer 
+}
+
+.headshot {
+	max-width: 400px;
+	height: auto;
+	width: auto;
+}
+
+.jamboard {
+	height: auto;
+	width: 100%;
+
+}
+
+.titanArt {
+	height: auto;
+	width: 250px;
 }
