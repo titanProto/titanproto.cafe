@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- please ensure that the correct footer script and stylesheets are linked -->
-        <script type="text/javascript" src="../../footer.js" defer></script>
-        <link rel="stylesheet" href="../../style.css">
-        <title>titan</title>
-        <meta name="description" content="hey there~ :3" />
-        <link rel="icon" type="image/png" href="../../favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg" />
-        <link rel="shortcut icon" href="../../favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="../../favicon/site.webmanifest" />
-    </head>
-    <body>
-        <div id="pageBody">
-            <h1>title.</h1>
-            <div id="navigation">
-                <!-- please ensure the correct nav option is selected -->
-                <a href="/" id="home">home</a> | <a href="/projects/"  class="active" id="projects">projects</a> | <a href="/comingout/" id="comingout">coming out</a> 
-            </div>
-            <h2>work in progress, don't mind the mess</h2>
-            <p>content.</p>
-        </div>
-    </body>
+	<head>
+		<script type="text/javascript" src="/footer.js" defer></script>
+		<link rel="stylesheet" href="/style.css">
+		<title>titan</title>
+		<meta name="description" content="hey there~ :3">
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+		<link rel="icon" href="/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+	</head>
+	<body>
+		<div id="pageBody">
+			<h1>jellyPi.</h1>
+			<div id="navigation">
+				<!-- please ensure the correct nav option is selected -->
+				<script type=text/javascript src="/navbar.js"></script>
+			</div>
+			<p>
+				my jellyfin server currently is running on a raspberry pi. it is an raspberry pi 4 with
+				8gb of ram. eventually i plan to open up the server to friends but currently
+				the pi cannot transcode and i don't think my internet could currently keep up
+				with unencoded streams to multiple people. eventually it will be moved to
+				the same server that runs my mineccraft servers, as the cpu in that will be
+				able to utilise hardware accelerated transcoding (unlike the pi 4).<br>
+				in the current set up, the pi is attached to an external 8TB spinning disc. from
+				memory it's a 5400rpm but i can't remember that for sure. the drive is in a
+				3d printed enclosure, and there is a usb fan attached to the pi to blow over itself
+				and the drive (as the drive gets pretty toasty in our aussie summers).
+			</p>
+		</div>
+	</body>
 </html>

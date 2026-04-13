@@ -95,6 +95,12 @@
     color: #00aec2;
     transition-duration: 2500ms;
 }
+#license {
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
 
 #navigation {
     font-family: 'Flexi IBM VGA False', monospace;
@@ -178,6 +184,13 @@ body {
 ::selection {
     background: #00aec2;
     text-shadow: none;
+}
+hr {
+    color: white;
+}
+html {
+  margin: 0;
+  overscroll-behavior: none;
 }
 
 @font-face {
