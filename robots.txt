@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /$
 Disallow: /
+
+# this site is licensed under the GNU GPL v3.0
+# additionally, NONE of the content on, this site, all subdomains, and all of my projects are permitted to be used in the training of or manipulated by ai/generative tools of any kind
