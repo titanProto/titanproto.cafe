@@ -16,7 +16,7 @@ footer.innerHTML = `
         <a href="https://www.last.fm/user/titanproto" target="_blank" class="contactButtons">last.fm</a>
     </div>
     <div id="version">
-        <p><a href="/">titanproto.cafe</a> 2.0.1</p>
+        <p><a href="/">titanproto.cafe</a> 2.0.2</p>
 		<p><i>this website and <br>
 		all of my projects past, present and future <br>
 		are made by a real human<br>
@@ -32,6 +32,7 @@ footer.innerHTML = `
         <img class="badges" src="/badges/transnow2.gif" title="trans rights are human rights">
         <img class="badges" src="/badges/tyg.gif" title=":3">
         <img class="badges" src="/badges/paws.gif" title=":3c">
+		<img class="bdages" src="/badges/neovim.gif" title="i believe in (neo)vim supremacy">
         <a href="https://cyber.dabamos.de/88x31/index.html" target="_blank"><img class="badges" src="/badges/88x31.gif" title="badges ^w^"></a>
         <img class="badges" src="/badges/antinazi.gif">
         <img class="badges" src="/badges/piracy.gif" title="sailing the high seas">
@@ -41,10 +42,13 @@ footer.innerHTML = `
     </div>
 	<p id="license">
 		<i>this site is licensed under the GNU GPL v3.0</i><br>
-		<i>additionally, NONE of the content on,
+		<!--<i>additionally, NONE of the content on,
 		this site, all subdomains, and all of my projects
 		are permitted to be used in the training of or manipulated by
-		ai/generative tools of any kind</i>
+		ai/generative tools of any kind</i>--> 
+		<!--not sure if that is technically GPL, of course it is functionally important tho 
+		if any model were to be trained on this website it's source code must adhere to 
+		the GPL, but i doubt they would-->
 	</p>
 `;
 
